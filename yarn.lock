@@ -17902,7 +17902,7 @@ __metadata:
     umzug: "npm:^3.8.2"
     utility-types: "npm:^3.11.0"
     uuid: "npm:^11.1.0"
-    validator: "npm:13.15.22"
+    validator: "npm:13.15.26"
     vaul: "npm:^1.1.2"
     vite: "npm:rolldown-vite@7.3.0"
     vite-plugin-pwa: "npm:1.0.3"
@@ -22355,10 +22355,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validator@npm:13.15.22":
-  version: 13.15.22
-  resolution: "validator@npm:13.15.22"
-  checksum: 10c0/69c0ad0abff0bc9f96faeb6790f5dd4e11b685031e4a115a056f3ed729aaac4d218e61f3582c051cb593305614a0a0d3b5da6ca7d5e0b426fa21be256a0ad852
+"validator@npm:13.15.26":
+  version: 13.15.26
+  resolution: "validator@npm:13.15.26"
+  checksum: 10c0/d66041685c531423f6b514d0481228503b96682fe30ed7925ad77ff3cd08c3983dc94f45e18457e44f62f89027b94a3342009d65421800ce65f6e0d2c6eaf7fc
   languageName: node
   linkType: hard
 
