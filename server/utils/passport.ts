@@ -70,6 +70,13 @@ export class StateStore {
   ) => {
     const state = ctx.cookies.get(this.key);
 
+    // 如果没有 state cookie，但提供了 state 参数，说明是从 SSO 门户直接发起的
+    // 这种情况下跳过 state 验证（因为用户从未访问过应用，没有机会设置 cookie）
+    if (!state && providedToken) {
+      // 允许通过，但不提供 codeVerifier（因为没有 PKCE）
+      return callback(null, true, providedToken);
+    }
+
     if (!state) {
       return callback(
         OAuthStateMismatchError("No state was available after OAuth flow"),

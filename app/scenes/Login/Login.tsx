@@ -270,10 +270,10 @@ function Login({ children, onBack }: Props) {
     );
   }
 
-  // If there is only one provider and it's OIDC, redirect immediately.
+  // If there is only one provider and it's OIDC or SSO, redirect immediately.
   if (
     config.providers.length === 1 &&
-    config.providers[0].id === "oidc" &&
+    (config.providers[0].id === "oidc" || config.providers[0].id === "sso") &&
     !env.OIDC_DISABLE_REDIRECT &&
     !query.get("notice") &&
     !query.get("logout")
