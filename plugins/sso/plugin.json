@@ -1,0 +1,6 @@
+{
+  "id": "sso",
+  "name": "SSO",
+  "priority": 10,
+  "description": "Adds y-sso-system OAuth2 authentication provider."
+}
